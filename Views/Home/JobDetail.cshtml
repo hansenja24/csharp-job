@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+
+
+<h1>@Model.GetEmployer()</h1>
+<p>@Model.GetPosition()</p>
+<p>@Model.GetAddress()</p>
+<p>@Model.GetMinExp()</p>
+<p>@Model.GetWage()</p>
+
+<a href='/'>Add another job</a>
+<a href='/jobs'>View all jobs</a>
+
+<form action="/jobs/list/clear" method="post">
+  <button type="submit" name="button">Clear All Jobs</button>
+</form>

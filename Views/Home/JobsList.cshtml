@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>Job</h1>
+<ul>
+  @foreach (var job in Model)
+  {
+    <p><a href='/jobs/@job.GetId()'>Employer:@job.GetEmployer()<br> Position:@job.GetPosition()<br>
+    Address:@job.GetAddress()<br>
+    Experience:@job.GetMinExp()<br>
+    Wage:@job.GetWage()</a>
+    </p>
+
+  }
+</ul>
+<a href='/'>Add new Job.</a>

@@ -1,0 +1,11 @@
+div#footer {
+
+    width:100%;
+    color:#CCC;
+    background:#333;
+    padding:8px;
+}
+
+body{
+  background-color: yellow;
+}
